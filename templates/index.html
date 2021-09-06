@@ -47,17 +47,6 @@
 
 
 {% block body %}
-
-
-    <!--div class="card">
-        <div id="chart_div" style="width: 1500px; height: 1000px"></div>
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-        </div>
-    </div-->
-
     <div class="card">
         <div class="card-header">
             Graph of {{ Country }}, {{ State }}
@@ -74,8 +63,8 @@
         <br>
         <br>
         <a type="button" class="btn btn-outline-primary" href="{{ url_for('world_wide') }}">Open world wide map</a>
-        <a type="button" class="btn btn-outline-primary"
-           href="{{ url_for('home_api', Country=Country, State=State) }}">to view API</a>
+        <!-- <a type="button" class="btn btn-outline-primary"
+           href="{{ url_for('home_api', Country=Country, State=State) }}">to view API</a> -->
     </div>
     <h>Last time updates: {{ last_time }}</h>
 

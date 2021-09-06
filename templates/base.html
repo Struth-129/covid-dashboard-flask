@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="A basic website for Covid-19 and people can access the free API" content="Author: B.Saketh Chandra">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -11,7 +10,7 @@
 <body>
 
 <nav class="navbar navbar-dark bg-dark">
-    <a class="navbar-brand" href="/">Covid-19 data</a>
+    <a class="navbar-brand" href="/">Covid-19 Dashboard</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01"
             aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -24,6 +23,9 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href={{ url_for('world_wide') }}>World wide map</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/quiz">Quiz</a>
             </li>
         </ul>
 
@@ -45,7 +47,6 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
-
 
 {#<!DOCTYPE html>#}
 {#<html lang="en">#}

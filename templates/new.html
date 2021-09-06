@@ -50,7 +50,7 @@
     {#    <h1>hello world!</h1>#}
     {#    <div id="chart_div" style="width: 1500px; height: 1000px"></div>#}
     <div class="card">
-        <div class="card-header">
+        <div>
             Graph of {{ Country|title }}, {{ State |title }}:
         </div>
         <div class="card-body">
@@ -63,8 +63,8 @@
         <br>
         <br>
         <a type="button" class="btn btn-outline-primary" href="{{ url_for('world_wide') }}">Open world wide map</a>
-        <a type="button" class="btn btn-outline-primary"
-           href="{{ url_for('home_api', Country=Country, State=State) }}">to view API</a>
+        <!-- <a type="button" class="btn btn-outline-primary"
+           href="{{ url_for('home_api', Country=Country, State=State) }}">to view API</a> -->
     </div>
     <h>Last time updates: {{ last_time }}</h>
 
